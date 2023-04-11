@@ -4,7 +4,7 @@ import Images from "@/components/Hero-Images";
 
 function Home() {
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="bg-slate-50">
       <Hero />
       <Images />
     </div>

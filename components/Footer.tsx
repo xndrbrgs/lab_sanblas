@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { BsFacebook, BsTwitter } from "react-icons/bs";
 
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
@@ -50,9 +51,9 @@ export default function Footer() {
               </dt>
               <dd className="mt-2 leading-7 text-gray-400">
                 <ul>
-                  <li>T: 787-743-0330</li>
-                  <li>T: 1-888-520-5227 (8am - 5pm)</li>
-                  <li>F: 787-744-2588</li>
+                  <li>Lunes-Viernes: (6:30am - 3:30pm)</li>
+                  <li>Sabado: (7am - 12pm)</li>
+                  <li>Domingo: Cerrado</li>
                 </ul>
               </dd>
             </div>
@@ -63,10 +64,14 @@ export default function Footer() {
                   aria-hidden="true"
                 />
               </div>
-              <dt className="mt-4 font-semibold text-white">No spam</dt>
-              <dd className="mt-2 leading-7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing.
-                Voluptate incididunt anim.
+              <dt className="mt-4 font-semibold text-white">Siganos</dt>
+              <dd className="mt-2 leading-7 text-gray-400 text-md flex space-x-3">
+                <a href="/facebook">
+                  <BsFacebook />
+                </a>
+                <a href="/twitter">
+                  <BsTwitter />
+                </a>
               </dd>
             </div>
           </dl>

@@ -41,7 +41,7 @@ const products = [
     description: "Vea su laboratorio mas cercano",
     href: "/servicios/sucursales",
     icon: BuildingOfficeIcon,
-  }
+  },
 ];
 
 function classNames(...classes: string[]) {
@@ -52,7 +52,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white shadow-md">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -61,8 +61,8 @@ export default function Header() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Laboratorio San Blas</span>
             <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              className="h-8 w-8 rounded-full"
+              src="https://i.ibb.co/fGqDvSf/photo.jpg"
               alt=""
             />
           </a>
@@ -79,7 +79,7 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
               Servicios
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -101,7 +101,7 @@ export default function Header() {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon
@@ -126,22 +126,27 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-md font-semibold leading-6 text-gray-900">
             Features
           </a>
           <a
             href="/nosotros"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-md font-semibold leading-6 text-gray-900"
           >
             Nosotros
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/preguntas"
+            className="text-md font-semibold leading-6 text-gray-900"
+          >
             Preguntas Frecuentes
           </a>
-          
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/contacto" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/contacto"
+            className="text-md font-semibold leading-6 text-gray-900"
+          >
             Contacto
           </a>
         </div>
@@ -158,8 +163,8 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Laboratorio San Blas</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-8 w-8 rounded-full"
+                src="https://i.ibb.co/fGqDvSf/photo.jpg"
                 alt=""
               />
             </a>
@@ -189,12 +194,12 @@ export default function Header() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products ].map((item) => (
+                        {[...products].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -210,24 +215,16 @@ export default function Header() {
                   Features
                 </a>
                 <a
-                  href="#"
+                  href="/nosotros"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Nosotros
                 </a>
                 <a
-                  href="#"
+                  href="/preguntas"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Preguntas Frecuentes
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
                 </a>
               </div>
             </div>
