@@ -4,7 +4,7 @@ import Images from "@/components/Hero-Images";
 
 function Home() {
   return (
-    <div className="bg-green-50">
+    <div>
       <Hero />
       <Images />
     </div>
