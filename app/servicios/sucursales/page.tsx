@@ -1,7 +1,8 @@
 import React from 'react'
+import Maps from './components/sucursales'
 
 export default function Sucursales() {
   return (
-    <div>Sucursales</div>
+    <Maps/>
   )
 }
