@@ -16,7 +16,7 @@ function Nosotros() {
       <div className="bg-gray-100">
         <PageTitle />
         <div className="max-w-5xl mx-auto py-10">
-          <div>
+          <div className="text-md">
             <h1 className="p-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum
               dolorum quibusdam voluptatibus officia minima quam quasi error.
