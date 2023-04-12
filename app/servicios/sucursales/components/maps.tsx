@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useState } from "react";
 import {
   GoogleMap,
   Marker,
@@ -25,19 +26,18 @@ const labs = [
 
 const zoom = 11;
 
-function createKey(labs: string[]) {
+function createKey(labs: any) {
   return labs.lat + labs.lng;
 }
 
 function Maps() {
+  const [map, setMap] = React.useState(null);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || "",
   });
 
-  const [map, setMap] = React.useState(null);
-
-  const onLoad = React.useCallback(function callback(map) {
+  const onLoad = React.useCallback(function callback(map: any) {
     // This is just an example of getting and using the map instance!!! don't just blindly copy!
     const bounds = new window.google.maps.LatLngBounds(center);
     map.setZoom(zoom);
