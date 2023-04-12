@@ -36,8 +36,8 @@ export default function Locations() {
             </dd>
             <dt className="text-base leading-7 text-gray-600">
               <p>
-                Carr #1 Km 56.7, B* Montellanos, <br />
-                Cayey 00776
+                Carr #1 Km 56.7 Bo. Montellanos, <br />
+                Cayey 00726
               </p>
             </dt>
             <dt className="text-base leading-7 text-gray-600">
@@ -55,7 +55,7 @@ export default function Locations() {
               <h1>Coamo</h1>
             </dd>
             <dt className="text-base leading-7 text-gray-600">
-              <p>C21 Baldorioty, Coamo, 00769</p>
+              <p>Baldorioty 21, Coamo, 00769</p>
             </dt>
             <dt className="text-base leading-7 text-gray-600">
               <p>Lunes a Viernes: 6:30am - 3:30pm</p>

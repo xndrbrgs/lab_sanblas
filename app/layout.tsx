@@ -1,14 +1,13 @@
 import "@/styles/globals.css";
-import { Roboto } from 'next/font/google';
+import localFont from 'next/font/local';
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const roboto = Roboto({
-  weight: ['400', '500'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+const myFont = localFont({
+  src: './fonts/PPMori-Regular.otf',
+  display: 'swap'
+});
 
 export const metadata = {
   title: "Laboratio San Blas",
@@ -21,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={myFont.className}>
       <body>
         <Header />
         {children}
