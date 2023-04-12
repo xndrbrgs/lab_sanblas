@@ -5,7 +5,7 @@ export default function ServiciosAlHogar() {
     <div className="bg-gray-50">
       <div className="mx-auto max-w-7xl pt-6 sm:px-6 sm:pt-6 lg:px-8 flex justify-center">
         <div>
-          <h1 className="text-4xl">Servicios al Hogar</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Servicios al Hogar</h1>
         </div>
       </div>
       <div className="mx-auto max-w-7xl py-10 sm:px-6 sm:py-10 lg:px-8">

@@ -5,7 +5,7 @@ function Nosotros() {
   return (
     <div className="max-w-5xl mx-auto pt-10">
       <div className="flex items-center justify-center pb-6">
-        <h1 className="text-2xl">Sobre Nosotros</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sobre Nosotros</h1>
       </div>
       <div>
         <h1 className="py-3">
