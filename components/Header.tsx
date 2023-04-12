@@ -61,8 +61,8 @@ export default function Header() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Laboratorio San Blas</span>
             <img
-              className="h-8 w-8 rounded-full"
-              src="https://i.ibb.co/fGqDvSf/photo.jpg"
+              className="h-20 w-auto"
+              src="https://i.ibb.co/8NGJWf1/lab-san-blas-grande.png"
               alt=""
             />
           </a>

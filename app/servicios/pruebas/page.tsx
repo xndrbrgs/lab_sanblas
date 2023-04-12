@@ -1,7 +1,10 @@
 import React from 'react'
+import PageTitle from './pagetitle'
 
 export default function Pruebas() {
   return (
-    <div>Pruebas</div>
+    <div>
+      <PageTitle/>
+    </div>
   )
 }
