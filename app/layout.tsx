@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const roboto = Roboto({
-  weight: '400',
+  weight: ['400', '500'],
   subsets: ['latin'],
   display: 'swap',
 })
