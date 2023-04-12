@@ -16,6 +16,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import { BsFacebook, BsTwitter } from "react-icons/bs";
 
 const products = [
   {
@@ -52,7 +53,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md z-60">
+    <header className="bg-white shadow-md z-50 sticky top-0">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -180,7 +181,7 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
+                <Disclosure as="div" className="-mx-3 pt-20">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
@@ -225,6 +226,24 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Preguntas Frecuentes
+                </a>
+                <a
+                  href="/contacto"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Contacto
+                </a>
+                <a
+                  href="/facebook"
+                  className="-mx-3 block rounded-full px-3 py-2 text-green-500 hover:bg-gray-50"
+                >
+                  <BsFacebook />
+                </a>
+                <a
+                  href="/twitter"
+                  className="-mx-3 block rounded-full px-3 py-2 text-green-500 hover:bg-gray-50"
+                >
+                  <BsTwitter />
                 </a>
               </div>
             </div>

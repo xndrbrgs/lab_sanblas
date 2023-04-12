@@ -4,17 +4,17 @@ import PageTitle from "./components/pagetitle";
 
 function Nosotros() {
   return (
-    <div>
+    <div className="bg-gray-100">
        <PageTitle/>
-      <div className="max-w-5xl mx-auto pt-10">
+      <div className="max-w-5xl mx-auto py-10">
         <div>
-          <h1 className="py-3">
+          <h1 className="p-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum
             dolorum quibusdam voluptatibus officia minima quam quasi error.
             Voluptatibus dolores ut eveniet excepturi explicabo atque debitis
             magni doloremque voluptas veniam?
           </h1>
-          <p className="py-3">
+          <p className="p-5">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years old. Richard McClintock, a Latin professor
@@ -41,7 +41,7 @@ function Nosotros() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p className="py-3">
+          <p className="p-5">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years old. Richard McClintock, a Latin professor

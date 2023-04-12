@@ -12,7 +12,7 @@ export default function Form() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="bg-gray-50 px-6 py-24 sm:py-32 lg:px-8">
+    <div className="bg-gray-100 px-6 py-24 sm:py-32 lg:px-8">
       <div className="relative w-full max-w-lg">
         <div className="absolute top-0 -left-4  w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob"></div>
         <div className="absolute top-0 right-3  w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob"></div>

@@ -1,8 +1,13 @@
 import React from 'react'
+import PageTitle from './pagetitle'
+import FAQ from './faq'
 
 function Preguntas() {
   return (
-    <div>Preguntas</div>
+    <div>
+      <PageTitle/>
+      <FAQ/>
+    </div>
   )
 }
 
