@@ -1,13 +1,10 @@
 import React from "react";
+import PageTitle from "./components/pagetitle";
 
 export default function ServiciosAlHogar() {
   return (
-    <div className="bg-gray-50">
-      <div className="mx-auto max-w-7xl pt-6 sm:px-6 sm:pt-6 lg:px-8 flex justify-center">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Servicios al Hogar</h1>
-        </div>
-      </div>
+    <div className="bg-white">
+      <PageTitle/>
       <div className="mx-auto max-w-7xl py-10 sm:px-6 sm:py-10 lg:px-8">
         <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
@@ -46,7 +43,7 @@ export default function ServiciosAlHogar() {
                 Contactanos
               </a>
               <a
-                href="/sucursales"
+                href="/servicios/sucursales"
                 className="text-sm font-semibold leading-6 text-white"
               >
                 Sucursales <span aria-hidden="true">→</span>

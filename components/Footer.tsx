@@ -51,7 +51,7 @@ export default function Footer() {
               </dt>
               <dd className="mt-2 leading-7 text-gray-400">
                 <ul>
-                  <li>Lunes-Viernes: (6:30am - 3:30pm)</li>
+                  <li>Lunes a Viernes: (6:30am - 3:30pm)</li>
                   <li>Sabado: (7am - 12pm)</li>
                   <li>Domingo: Cerrado</li>
                 </ul>

@@ -9,13 +9,12 @@ import {
 } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "700px",
-  height: "500px",
+  height: "50vh",
 };
 
 const center = {
-  lat: 17.9687409,
-  lng: -66.4138803,
+  lat: 18.078563,
+  lng: -66.283687,
 };
 
 const labs = [
@@ -24,9 +23,9 @@ const labs = [
   { lat: 18.111905, lng: -66.166 },
 ];
 
-const zoom = 10;
+const zoom = 11;
 
-function createKey(labs) {
+function createKey(labs: string[]) {
   return labs.lat + labs.lng;
 }
 
