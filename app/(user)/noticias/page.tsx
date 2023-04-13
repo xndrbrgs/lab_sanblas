@@ -7,6 +7,8 @@ function Noticias() {
   return (
     <div>
       <PageTitle />
+
+      {/* @ts-expect-error Server Component */}
       <Posts />
     </div>
   );
