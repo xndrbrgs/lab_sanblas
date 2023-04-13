@@ -1,19 +1,14 @@
-"use client";
-
 import React from "react";
 import PageTitle from "./pagetitle";
 import { motion } from "framer-motion";
+import Posts from "./posts";
 
 function Noticias() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 15 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 15 }}
-      transition={{ delay: 0.25 }}
-    >
+    <div>
       <PageTitle />
-    </motion.div>
+      <Posts />
+    </div>
   );
 }
 
