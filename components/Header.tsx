@@ -139,6 +139,12 @@ export default function Header() {
           >
             Preguntas Frecuentes
           </a>
+          <a
+            href="/noticias"
+            className="text-md font-semibold leading-6 text-gray-900"
+          >
+            Noticias
+          </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
@@ -219,6 +225,12 @@ export default function Header() {
                   Preguntas Frecuentes
                 </a>
                 <a
+                  href="/noticias"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Noticias
+                </a>
+                <a
                   href="/contacto"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -226,13 +238,13 @@ export default function Header() {
                 </a>
                 <a
                   href="/facebook"
-                  className="-mx-3 block rounded-full px-3 py-2 text-green-500 hover:bg-gray-50"
+                  className="-mx-3 block rounded-full px-3 py-2 text-gray-500 hover:bg-gray-50"
                 >
                   <BsFacebook />
                 </a>
                 <a
                   href="/twitter"
-                  className="-mx-3 block rounded-full px-3 py-2 text-green-500 hover:bg-gray-50"
+                  className="-mx-3 block rounded-full px-3 py-2 text-gray-500 hover:bg-gray-50"
                 >
                   <BsTwitter />
                 </a>
