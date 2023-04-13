@@ -26,7 +26,7 @@ const labs = [
 
 const zoom = 11;
 
-function createKey(labs: any) {
+function createKey(labs) {
   return labs.lat + labs.lng;
 }
 
@@ -37,7 +37,7 @@ function Maps() {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || "",
   });
 
-  const onLoad = React.useCallback(function callback(map: any) {
+  const onLoad = React.useCallback(function callback(map) {
     // This is just an example of getting and using the map instance!!! don't just blindly copy!
     const bounds = new window.google.maps.LatLngBounds(center);
     map.setZoom(zoom);
