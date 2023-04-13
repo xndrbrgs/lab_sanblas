@@ -63,7 +63,6 @@ function Lista() {
                     3
                   </td>
                   <td
-                    colSpan="2"
                     className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Larry
