@@ -1,3 +1,6 @@
+import { Reference } from "sanity";
+import { Block } from "typescript";
+
 type Base = {
     _createdAt: string,
     _id: string,
@@ -6,3 +9,42 @@ type Base = {
     _updatedAt: string
 };
 
+interface Post extends Base {
+    author: Author,
+    body: Block[],
+    categories: Category[],
+    mainImage: Image,
+    slug: Slug,
+    title: string,
+    description: string
+}
+
+interface Author extends Base {
+    bio: Block[],
+    image: Image,
+    name: string,
+    slug: Slug
+}
+
+interface Image {
+    _type: Image,
+    asset: Reference
+}
+
+interface Reference {
+    _ref: string,
+    _type: 'reference'
+}
+
+interface Slug {
+    _type: 'slug',
+    current: string
+}
+
+interface Block {
+    _key: string,
+    _type: "bliock",
+    children: Span[],
+    markDefs: any[],
+    style: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'blockquote'
+}
