@@ -5,6 +5,8 @@ import Hero from "@/components/Hero";
 import Images from "@/components/Hero-Images";
 import { motion } from "framer-motion";
 
+export const revalidate = 60; //revalidate the page every 60 seconds
+
 function Home() {
   return (
     <motion.div
