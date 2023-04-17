@@ -48,3 +48,18 @@ interface Block {
     markDefs: any[],
     style: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'blockquote'
 }
+
+interface Category extends Base {
+    description: string,
+    title: string
+}
+
+interface MainImage {
+    _type: 'image',
+    asset: Reference
+}
+
+interface Title {
+    _type: 'string',
+    current: string
+}
