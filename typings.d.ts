@@ -11,7 +11,7 @@ type Base = {
 
 interface Post extends Base {
     author: Author,
-    body: Block[],
+    body: TypedObject[],
     categories: Category[],
     mainImage: Image,
     slug: Slug,
@@ -43,7 +43,7 @@ interface Slug {
 
 interface Block {
     _key: string,
-    _type: "bliock",
+    _type: "block",
     children: Span[],
     markDefs: any[],
     style: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'blockquote'
