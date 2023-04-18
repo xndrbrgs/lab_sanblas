@@ -4,6 +4,7 @@ import { groq } from "next-sanity";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../noticias/RichTextComponents";
+import {Post} from '../../../../typings'
 
 type Props = {
   params: {
@@ -19,8 +20,7 @@ export async function generateStaticParams() {
         {slug}
     `;
 
-  {/* @ts-expect-error Server Component */}
-  const slugs: Post[] = await client.fetch(query);
+  const slugs:  Post[] = await client.fetch(query);
   const slugRoutes = slugs.map((slug) => slug.slug.current);
 
   return slugRoutes.map((slug) => ({
@@ -37,7 +37,6 @@ async function Post({ params: { slug } }: Props) {
     categories[]->
 }
 `;
-  {/* @ts-expect-error Server Component */}
   const post: Post = await client.fetch(query, { slug });
 
   return (
